@@ -13,42 +13,43 @@
     </head>
     
     <header>
-        <nav>
-            <table>
-                <tr>
-                    <td> Home</td>
-                    <td> About me</td>
-                    <td> Contact me</td>
-                </tr>
-            </table>
-        </nav>
+        <ul>
+            <li><a class= "active" href= "#homepage"> Home</a></li>
+            <li><a href= "#aboutme"> About Me</a></li>
+            <li><a href= "#contactme"> Contact Me</a></li>
+        </ul>
     </header>
 
     <body>
 
         <!-- Home page-->
 
-        <Section id="homepage">
-            
-            <div id="Title">
-                <h1> Andrew Kim </h1>
-            </div>    
-    
-            <h3> Title of job I'm pursuing</h3>
-    
-            <h4>Resume</h4>
-    
-            <h4> View Project </h4>        
-    
-            <!-- Include projects in the front page-->
-            <!-- Include view on GitHub, view live version, small description, skills used-->
-            <!-- At the bottom of the page, add a link to LinkedIn and GitHub-->
+        <div class="homepage">
+
+            <div class="homepageleft">
+                <div id="Title">
+                    <h1> Andrew Kim </h1>
+                </div>
+
+                <h3> Title of job I'm pursuing</h3>
         
-        </Section>
+                <h4>Resume</h4>
+
+            </div>
+                    
+            <div class="homepageright">
+                <h4> View Project </h4>        
+    
+                <!-- Include projects in the front page-->
+                <!-- Include view on GitHub, view live version, small description, skills used-->
+                <!-- At the bottom of the page, add a link to LinkedIn and GitHub-->
+            </div>
+        
+        </div>
         
         <!-- About me page -->
 
-        <Section id= "aboutme">
+        <div class= "aboutme">
 
             <div id="Title">
                 <h1>About me</h1>
@@ -91,32 +92,11 @@
                 </tr>
             </table>
 
-            <!--
-            <div class = "grid">
-                <div class= "gridheader"> Front End</div>
-                <div class= "gridheader"> Back End</div>
-                <div class= "gridheader"> Version Control</div>
-                <div class= "gridheader"> Framework</div>
-                <div class= "gridcontent"> Hello</div>
-                <div class= "gridcontent"> Goodbye</div>
-                <div class= "gridcontent"> Wassup</div>
-                <div class= "gridcontent"> Nothing</div>
-                <div class= "gridcontent"> Hello</div>
-                <div class= "gridcontent"> Goodbye</div>
-                <div class= "gridcontent"> Wassup</div>
-                <div class= "gridcontent"> Nothing</div>
-                <div class= "gridcontent"> Hello</div>
-                <div class= "gridcontent"> Goodbye</div>
-                <div class= "gridcontent"> </div>
-                <div class= "gridcontent"> </div>
-            </div> 
-            -->
-
-        </section>
+        </div>
 
         <!-- Contact me page -->
 
-        <section id="contactme">
+        <div class="contactme">
 
             <script>
                 function respond()
@@ -139,10 +119,10 @@
             <button> Submit </button>
             </form>
 
-        </section>
+        </div>
         
         <footer>
-
+            <p>hello</p>
         </footer>
     </body>
 
