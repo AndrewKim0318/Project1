@@ -6,84 +6,144 @@
 
         <title> My Web Page </title>
 
+        <meta name = "viewport" content= "width=device-width, initial-scale= 1.0">
+
         <link rel="stylesheet" href ="WebDevelopment.css">
 
     </head>
     
+    <header>
+        <nav>
+            <table>
+                <tr>
+                    <td> Home</td>
+                    <td> About me</td>
+                    <td> Contact me</td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+
     <body>
+
         <!-- Home page-->
-        <div id="Header">
-            <h1> Andrew Kim </h1>
-        </div>    
 
-        <h3> Title of job I'm pursuing</h3>
-
-        
-        <h4> View Project </h4>
-                
-        
-
-        <!-- Include projects in the front page-->
-        <!-- Below each project, include -->
-        <!-- At the bottom of the page, add a link to LinkedIn and GitHub-->
+        <Section id="homepage">
+            
+            <div id="Title">
+                <h1> Andrew Kim </h1>
+            </div>    
     
+            <h3> Title of job I'm pursuing</h3>
+    
+            <h4>Resume</h4>
+    
+            <h4> View Project </h4>        
+    
+            <!-- Include projects in the front page-->
+            <!-- Include view on GitHub, view live version, small description, skills used-->
+            <!-- At the bottom of the page, add a link to LinkedIn and GitHub-->
+        
+        </Section>
+        
         <!-- About me page -->
-        <div id="Header">
-            <h1>About me</h1>
-        </div>
-        
-        <p>
-            I am a self taught developer based in Calgary. I am currently pursuing a career in web development that will allow me to learn more about programming.
-        </p>
 
-         <!-- Add skills table -->
+        <Section id= "aboutme">
 
-        <div id="Header">
-            <h1> Skills </h1>
-        </div>
+            <div id="Title">
+                <h1>About me</h1>
+            </div>
+            
+            <p>
+                I am a self taught developer based in Calgary. I am currently pursuing a career in web development that will allow me to learn more about programming.
+            </p>
 
-        <table>
-            <tr>
-                <th> Front End</th>
-                <th> Back End</th>
-                <th> Version Control</th>
-                <th> Framework</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-    
+            <!-- Add skills table -->
+
+            <div id="Title">
+                <h1> Skills </h1>
+            </div>
+
+            <table>
+                <tr>
+                    <th> Front End</th>
+                    <th> Back End</th>
+                    <th> Version Control</th>
+                    <th> Framework</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <!--
+            <div class = "grid">
+                <div class= "gridheader"> Front End</div>
+                <div class= "gridheader"> Back End</div>
+                <div class= "gridheader"> Version Control</div>
+                <div class= "gridheader"> Framework</div>
+                <div class= "gridcontent"> Hello</div>
+                <div class= "gridcontent"> Goodbye</div>
+                <div class= "gridcontent"> Wassup</div>
+                <div class= "gridcontent"> Nothing</div>
+                <div class= "gridcontent"> Hello</div>
+                <div class= "gridcontent"> Goodbye</div>
+                <div class= "gridcontent"> Wassup</div>
+                <div class= "gridcontent"> Nothing</div>
+                <div class= "gridcontent"> Hello</div>
+                <div class= "gridcontent"> Goodbye</div>
+                <div class= "gridcontent"> </div>
+                <div class= "gridcontent"> </div>
+            </div> 
+            -->
+
+        </section>
+
         <!-- Contact me page -->
-        <script>
-            function respond()
-            {
-                let Name = document.querySelector('#Name').value;
-                alert('Thank you for your message ' + Name);
-            }
-                
-        </script>    
-        <div id="Header">
-            <h1> Contact Me</h1>
-        </div>
 
-        <form onsubmit = "respond(); return false;">
-            <input id= "Name" type= "text" placeholder= "Name" name= "Name">
-            <input type= "text" placeholder= "Email" name="Email">
-            <input type= "text" placeholder= "Subject" name= "Subject">
-            <input type= "text" placeholder= "Message" name= "Message">
-        <button> Submit </button>
-        </form>
+        <section id="contactme">
+
+            <script>
+                function respond()
+                {
+                    let Name = document.querySelector('#Name').value;
+                    alert('Thank you for your message ' + Name);
+                }
+                    
+            </script>    
+
+            <div id="Title">
+                <h1> Contact Me</h1>
+            </div>
+
+            <form onsubmit = "respond(); return false;">
+                <input id= "Name" type= "text" placeholder= "Name" name= "Name">
+                <input type= "text" placeholder= "Email" name="Email">
+                <input type= "text" placeholder= "Subject" name= "Subject">
+                <input type= "text" placeholder= "Message" name= "Message">
+            <button> Submit </button>
+            </form>
+
+        </section>
         
+        <footer>
+
+        </footer>
     </body>
 
 </html>
