@@ -1,0 +1,411 @@
+/* Global */
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    overflow: hidden;
+}
+
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    text-align:center;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(51, 64, 77);
+    height: 50px;
+}
+  
+header ul li {
+    float: left;
+    font-size: 20px;
+}
+
+header ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    background-color: darkslategray;
+    height: 50px;
+}
+
+footer{
+    background-color: rgb(51, 64, 77);
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    display: block;
+    height: 50px;
+}
+
+
+/* index.html */
+
+#homepage{
+    height:100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.homepageleft{
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+    grid-column: 1;
+    background-color:#C2CAD0;
+}
+
+.homepagelefttop{    
+    grid-row: 1;
+}
+
+.homepageleftmiddle{
+    text-align: center;
+    grid-row: 2;
+}
+
+.homepageleftbottom{    
+    grid-row: 3;
+}
+
+.homepagename{    
+    font-size: 60px;
+}
+
+.resume{
+    font-size: 30px;
+}
+
+.homepageright{
+    grid-column: 2;
+    text-align: center;
+    height: 100%;
+    display:grid;
+    background-color: #C2B9B0;
+}
+
+#projects{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 100px 1fr 200px;
+    grid-gap: 1em;
+    padding: 0.5em;    
+}
+
+#projecttitle{
+    display: grid;
+    padding: .5rem;
+    grid-column: span 3;
+    grid-row: 1;
+    font-size: 40px;
+}
+
+#project1{
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: .5rem;
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr;    
+    position: relative;
+    grid-gap: 1em;
+}
+
+#project1:hover .comingsoon{
+    background-color: #a9a9a9;
+    visibility: visible;
+    opacity: 0.7;
+}
+
+#project2{
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: .5rem;
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr;
+    position: relative;
+    grid-gap: 1em;
+}
+
+#project2:hover .comingsoon{
+    background-color: #a9a9a9;
+    visibility: visible;
+    opacity: 0.7;
+}
+
+#project3{
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: .5rem;
+    grid-column: 3;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr;
+    position: relative;
+    grid-gap: 1em;
+}
+
+#project3:hover .comingsoon{
+    background-color: #a9a9a9;
+    visibility: visible;
+    opacity: 0.7;
+}
+
+/* #project4{
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: .5rem;
+    grid-column: 4;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-gap: 1em;
+} */
+
+.projectname{
+    grid-row: 1;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectimage{
+    grid-row: 2;
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+}
+
+.projectdesc{
+    grid-row: 3;
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+}
+
+.comingsoon{
+    position: absolute;
+    font-size: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* aboutme.html */
+
+#aboutme{
+    height:100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "a b b b c"
+        "a b b b c"
+        "a b b b c"
+        "a b b b c";   
+}
+
+#aboutmeleft{
+    grid-area: a;
+    background-color: #C2B9B0;
+    height: 100%;
+}
+
+#aboutmeright{
+    grid-area: c;
+    background-color: #C2B9B0;
+    height: 100%;
+}
+
+#aboutmecontent{
+    grid-area: b;
+    height: 100%;
+    text-align: center;
+    background-color: #C2CAD0;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+#aboutmetop{
+    grid-row: 1;
+}
+
+#aboutmemiddle{
+    grid-row: 2;
+}
+
+#aboutmebottom{
+    grid-row: 3;
+}
+
+#aboutmetitle{
+    font-size: 60px
+}
+
+#aboutmetext{
+    font-size: 20px
+}
+
+#skillstabletitle{
+    font-size: 60px;
+}
+
+table{
+    width: 100%;
+    column-fill: inherit;
+    border: 2px solid black;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th{
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    text-align: center;
+}
+
+td{
+    font-size: 20px;
+    text-align: center;
+}
+
+table td + td {
+    border-left: 2px solid black;
+}
+
+/* contactme.html */
+#contactme{
+    height:100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "a b b b c"
+        "a b b b c"
+        "a b b b c"
+        "a b b b c"; 
+}
+
+#contactmeleft{
+    grid-area: a;
+    height:100%;
+    background-color: #C2B9B0;
+    
+}
+
+#contactmeright{
+    grid-area: c;
+    height:100%;
+    background-color: #C2B9B0;
+    
+}
+
+#contactmemaincontent{
+   grid-area: b;
+   height:100%;
+   background-color: #C2CAD0;
+   text-align: center;
+}
+
+#contactinfo{
+    display: grid;
+    grid-template-rows: 60px 1fr 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "a a"
+        "b c"
+        "d d"
+        "e e";
+}
+
+#contactmetitle{
+    font-size: 60px;
+    grid-area: a;
+    height: 60px;
+    padding: 0px;
+}
+
+#contactinfoname{
+    grid-area: b;
+    display: inline-grid;
+    width:49.5%; 
+}
+
+#contactinfoemail{
+    grid-area: c;
+    display: inline-grid;
+    width: 50%;
+}
+
+#contactinfosubject{
+    grid-area: d;
+    width: 100%;
+}
+
+#contactinfomessage{
+    grid-area: e;
+    width: 100%;
+}
+
+
+input[type=submit] {
+    background-color: darkslategray;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: middle;
+    width: 100px;
+    
+}
+
+input[type=text], textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+resize: vertical;
+font-family: Arial, Helvetica, sans-serif ;
+box-sizing: border-box;
+margin-top: 6px;
+}
+
+textarea{
+    height: 200px;
+    min-height:100px;
+}
+
+@media screen and (max-width: 600px) {
+.col-50, .col-100, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+}
+}  
